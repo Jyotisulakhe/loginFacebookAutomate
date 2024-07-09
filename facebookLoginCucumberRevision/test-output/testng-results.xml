@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-09T12:59:22 IST" name="Default suite" finished-at="2024-07-09T12:59:23 IST" duration-ms="643">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runLogin@5e2c3d18]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-07-09T12:59:22 IST" name="Default test" finished-at="2024-07-09T12:59:23 IST" duration-ms="643">
+      <class name="runner.runLogin">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.runLogin@5e2c3d18]" started-at="2024-07-09T12:59:22 IST" name="setUpClass" finished-at="2024-07-09T12:59:23 IST" duration-ms="380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1bc715b8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runLogin@5e2c3d18]" started-at="2024-07-09T12:59:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-09T12:59:23 IST" duration-ms="165" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login in to facebook"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Automate facebook Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at steps.loginFacebook.user_should_open_browser_and_open_facebook_login_page(loginFacebook.java:15)
+at ✽.user should open browser and open facebook login page(file:///C:/Users/Asus/Documents/workspace-spring-tool-suite-4-4.22.0.RELEASE/facebookLoginCucumber/src/test/resources/features/login.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.runLogin@5e2c3d18]" started-at="2024-07-09T12:59:23 IST" name="tearDownClass" finished-at="2024-07-09T12:59:23 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.runLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
